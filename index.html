@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="frame">
+            <div class="app">
+                <div class="infoWeather">
+                    <div id="cityName"></div>
+                    <div id="degrees"></div>
+                    <div id="dayTodey"></div>
+                </div>
+                <div class="infoDop">
+                    <div id="iconWeather"></div>
+                    <div id="weatherCloud"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <template id="templateSearch">
+    <div class="askCity"></div>
+    <div class="searchCity">
+        <input type="text" id="search" placeholder="enter your city">
+    </div>
+    </template> 
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+@import url('https://fonts.cdnfonts.com/css/caver-pitalsal');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("background_2.jpg") center center/100% 100% repeat-x;
+}
+
+.wrapper .frame .app {
+    width: 600px;
+    height: 370px;
+    background: linear-gradient(90deg, rgb(11, 99, 171), rgb(58 156 236) 50%, rgb(11, 99, 171));
+    border-radius: 50px;
+    display: flex;
+    color: white;
+    text-align: center;
+    font-family: 'Caver Pitalsal', sans-serif;
+}
+
+.wrapper .frame .app .infoWeather {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .frame .app .infoDop {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#cityName,
+#degrees,
+#dayTodey {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#cityName {
+    font-size: 68px;
+}
+
+#degrees {
+    font-size: 100px;
+}
+
+#dayTodey {
+    font-size: 68px;
+}
+
+#iconWeather {
+    width: 100%;
+    height: 80%;
+}
+
+#iconWeather img {
+    width: 80%;
+    height: 80%;
+}
+
+#weatherCloud {
+    width: 100%;
+    height: 20%;
+    font-size: 30px;
+}
+
+.askCity {
+    background: #272222d6;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    opacity: 0.8;
+}
+
+.searchCity {
+    width: 52%;
+    height: 18%;
+    background-color: #2cb4c5;
+    position: absolute;
+    top: 41%;
+    left: 24%;
+    z-index: 1;
+    box-shadow: inset 50px 75px 83px #116ab3;
+    border-radius: 30px 30px 30px 30px;
+    border: 4px solid #4da6ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search {
+    width: 52%;
+    height: 34%;
+    position: absolute;
+    border-radius: 4px;
+    border: 4px solid #025774;
+    background-color: rgb(7 56 73);
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    padding: 8px;
+    font-weight: 600;
+}
+
+#search:focus {
+    outline: none;
+    border: 4px solid #9da0a3;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #203a52;
+}
+
+
+
+
+
+
+
+
+.frame {
+    position: relative;
+    z-index: 0;
+    width: 611px;
+    height: 382px;
+    border-radius: 60px;
+    overflow: hidden;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #116ab3;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#116ab3, #116ab3), linear-gradient(#4da6ee, #4da6ee), linear-gradient(#116ab3, #116ab3), linear-gradient(#4da6ee, #4da6ee);
+    animation: animFrame 4s linear infinite;
+}
+
+.frame::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: #3a9cec;
+    border-radius: 50px;
+}
+
+@keyframes animFrame {
+    100% {
+        transform: rotate(1turn);
+    }
+}
