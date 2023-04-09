@@ -290,9 +290,9 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .wrapper {
+    /* .wrapper {
         padding-top: 8%;
-    }
+    } */
 
     .wrapper .frame {
         width: 320px;
