@@ -100,8 +100,10 @@ function showChangeSearc() {
 }
 
 function fillTheWeather(data) {
-    cityName.style.fontSize = "55px";
     cityName.innerHTML = data.city.name;
+    if (cityName.innerHTML.length > 10)
+        cityName.style.fontSize = "40px";
+    else cityName.style.fontSize = "55px";
     degrees.innerHTML = Math.round(data.list[0].main.temp - 273) + '&#176';
     dayTodey.innerHTML = givDay();
     iconWeather.innerHTML = '<img src="http://openweathermap.org/img/wn/' + data.list[0].weather[0]['icon'] + '@2x.png">';

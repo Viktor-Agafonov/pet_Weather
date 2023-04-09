@@ -290,25 +290,25 @@
 }
 
 @media screen and (max-width: 1024px) {
-    /* .wrapper {
-        padding-top: 8%;
-    } */
-
     .wrapper .frame {
-        width: 320px;
+        width: 82%;
     }
 
     .wrapper .frameFirst {
-        height: 380px;
+        height: 40%;
     }
 
     .wrapper .frame .app {
         width: 97%;
     }
 
+    .wrapper .frame .app .infoDop {
+        height: 94%;
+    }
+
     .wrapper .frame .appFirst {
-        height: 368px;
-        width: 308px;
+        height: 95%;
+        width: 96%;
     }
 
     .wrapper .frame .app .infoWeather {
@@ -321,13 +321,15 @@
 
     #iconWeather,
     #iconWeather img {
-        width: 100%;
+        width: 80%;
     }
 
-    #cityName,
-    #degrees,
-    #dayTodey {
-        margin-left: 30%;
+    #buttonChange {
+        width: 14%;
+        height: 14%;
+        position: absolute;
+        top: 10%;
+        left: 80.5%;
     }
 
     #cityName {
@@ -346,12 +348,12 @@
     }
 
     .wrapper .frameSecond .appSecond .forfiveDays .iconWeatherOfTheWeek {
-        height: 32%;
+        height: 24%;
     }
 
     .wrapper .frameSecond .appSecond .forfiveDays .iconWeatherOfTheWeek img {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     .searchCity {
@@ -363,6 +365,32 @@
 
     #search {
         width: 82%;
+        font-size: 16px;
+    }
+
+    #degrees {
+        font-size: 50px;
+        height: 38%;
+    }
+
+    #dayTodey {
+        font-size: 36px;
+    }
+
+    #weatherCloud {
+        font-size: 29px;
+    }
+
+    #iconWeather {
+        justify-content: flex-end;
+    }
+    .wrapper .frameSecond .appSecond .forfiveDays .dayOfTheWeek {
+        font-size: 30px;
+    }
+    .wrapper .frameSecond .appSecond .forfiveDays .degreesOfTheWeek {
+        font-size: 42px;
+    }
+    .wrapper .frameSecond .appSecond .forfiveDays .weatherCloudOfTheWeek {
         font-size: 16px;
     }
 }
