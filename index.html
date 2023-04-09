@@ -12,8 +12,9 @@
 
 <body>
     <div class="wrapper">
-        <div class="frame">
-            <div class="app">
+        <div class="frame frameFirst">
+            <div class="app appFirst">
+                <div id="buttonChange"><img src="geolocalization.png" alt="geolocalization"></div>
                 <div class="infoWeather">
                     <div id="cityName"></div>
                     <div id="degrees"></div>
@@ -22,6 +23,11 @@
                 <div class="infoDop">
                     <div id="iconWeather"></div>
                     <div id="weatherCloud"></div>
+                </div>
+            </div>
+        </div>
+        <div class="frame frameSecond">
+            <div class="app appSecond">
                 </div>
             </div>
         </div>
@@ -34,5 +40,5 @@
     </template> 
     <script src="main.js"></script>
 </body>
-
+<div class="weatherFourDays"></div>
 </html>

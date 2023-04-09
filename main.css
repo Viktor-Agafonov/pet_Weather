@@ -9,15 +9,15 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     background: url("background_2.jpg") center center/100% 100% repeat-x;
+    padding-top: 40px;
 }
 
 .wrapper .frame .app {
-    width: 600px;
-    height: 370px;
+    width: 540px;
     background: linear-gradient(90deg, rgb(11, 99, 171), rgb(58 156 236) 50%, rgb(11, 99, 171));
     border-radius: 50px;
     display: flex;
@@ -26,19 +26,73 @@
     font-family: 'Caver Pitalsal', sans-serif;
 }
 
+.appFirst {
+    height: 270px;
+    z-index: 1;
+}
+
+.appSecond {
+    height: 388px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .wrapper .frame .app .infoWeather {
-    width: 50%;
+    width: 55%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .wrapper .frame .app .infoDop {
-    width: 50%;
+    width: 45%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
 
+.wrapper .frameSecond .appSecond .forfiveDays {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0 10% 0;
+}
+
+.wrapper .frameSecond .appSecond .forfiveDays .dayOfTheWeek {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 40px;
+}
+.wrapper .frameSecond .appSecond .forfiveDays .degreesOfTheWeek {
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 56px;
+}
+.wrapper .frameSecond .appSecond .forfiveDays .iconWeatherOfTheWeek {
+    height: 34%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper .frameSecond .appSecond .forfiveDays .iconWeatherOfTheWeek img {
+    width: 120px;
+    height: 120px;
+}
+.wrapper .frameSecond .appSecond .forfiveDays .weatherCloudOfTheWeek {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
 }
 
 #cityName,
@@ -53,20 +107,23 @@
 }
 
 #cityName {
-    font-size: 68px;
+    font-size: 55px;
 }
 
 #degrees {
-    font-size: 100px;
+    font-size: 80px;
 }
 
 #dayTodey {
-    font-size: 68px;
+    font-size: 45px;
 }
 
 #iconWeather {
-    width: 100%;
-    height: 80%;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #iconWeather img {
@@ -76,8 +133,11 @@
 
 #weatherCloud {
     width: 100%;
-    height: 20%;
-    font-size: 30px;
+    height: 28%;
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .askCity {
@@ -125,25 +185,66 @@
     background-color: rgba(255, 255, 255, 0.8);
     color: #203a52;
 }
+#buttonChange {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10%;
+    left: 3.5%;
+}
+#buttonChange img {
+    width: 100%;
+    height: 100%;
+}
+
+.changeCity {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.inputCity {
+    width: 62%;
+    height: 57%;
+    border-radius: 4px;
+    border: 2px solid #025774;
+    background-color: rgb(58 156 236);
+    font-size: 24px;
+    color: #203a52;;
+    text-transform: uppercase;
+    padding: 8px;
+    margin-left: 20%;
+}
+.inputCity:focus {
+    outline: none;
+    border: 2px solid #9da0a3;
+    background-color: rgb(90 178 250);
+    color: white;
+}
 
 
 
+.frameFirst {
+    height: 283px;
+}
 
-
-
-
+.frameSecond {
+    height: 400px;
+}
 
 .frame {
+    width: 552px;
     position: relative;
     z-index: 0;
-    width: 611px;
-    height: 382px;
     border-radius: 60px;
     overflow: hidden;
     margin: 30px auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: -13px;
 }
 
 .frame::before {
