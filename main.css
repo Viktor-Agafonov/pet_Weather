@@ -291,11 +291,11 @@
 
 @media screen and (max-width: 1024px) {
     .wrapper {
-        padding-top: 18%;
+        padding-top: 8%;
     }
 
     .wrapper .frame {
-        width: 380px;
+        width: 320px;
     }
 
     .wrapper .frameFirst {
@@ -308,7 +308,7 @@
 
     .wrapper .frame .appFirst {
         height: 368px;
-        width: 368px;
+        width: 308px;
     }
 
     .wrapper .frame .app .infoWeather {
